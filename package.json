@@ -1,0 +1,30 @@
+{
+  "name": "ludomatic5000",
+  "version": "0.0.1",
+  "description": "This is a simple tool which can help rapidly prototype cards/tiles/chits for board/card games.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/genericallyloud/ludomatic5000.git"
+  },
+  "keywords": [
+    "card",
+    "game",
+    "prototype"
+  ],
+  "author": "Russell Leggett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/genericallyloud/ludomatic5000/issues"
+  },
+  "homepage": "https://github.com/genericallyloud/ludomatic5000",
+  "dependencies": {
+    "csvtojson": "^0.3.21",
+    "jade": "^1.9.2",
+    "underscore": "^1.8.3",
+    "wkhtmltopdf": "^0.1.5"
+  }
+}
