@@ -26,6 +26,8 @@
   "homepage": "https://github.com/genericallyloud/ludomatic5000",
   "dependencies": {
     "csvtojson": "^0.3.21",
+    "express": "^4.12.4",
+    "fs-extra": "^0.18.3",
     "jade": "^1.9.2",
     "underscore": "^1.8.3",
     "wkhtmltopdf": "^0.1.5",
