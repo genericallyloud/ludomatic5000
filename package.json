@@ -1,6 +1,6 @@
 {
   "name": "ludomatic5000",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "This is a simple tool which can help rapidly prototype cards/tiles/chits for board/card games.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
