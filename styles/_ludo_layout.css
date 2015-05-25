@@ -1,18 +1,54 @@
 .page{
     page-break-inside: avoid;
     font-family: "Source Sans Pro", helvetica,sans-serif;
-}
-.clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
-   clear: both;
+    position:relative;
+    width:11in;
+    height:8.5in;
 }
 .component{
-    float:left;
-    width:2.4in;
+    position:absolute;
+    width:2.5in;
     height:3.5in;
     border:1px solid black;
-    position:relative;
+    box-sizing: border-box;
+}
+.component-0{
+    top:0.5in;
+    left:0.5in;
+}
+.component-1{
+    top:0.5in;
+    left:3in;
+}
+.component-2{
+    top:0.5in;
+    left:5.5in;
+}
+.component-3{
+    top:0.5in;
+    left:8in;
+}
+.component-4{
+    bottom:0.5in;
+    left:0.5in;
+}
+.component-5{
+    bottom:0.5in;
+    left:3in;
+}
+.component-6{
+    bottom:0.5in;
+    left:5.5in;
+}
+.component-7{
+    bottom:0.5in;
+    left:8in;
+}
+.vertical-mark{
+    width:1px;
+    height:0.25in;
+    position:absolute;
+    top:0;
+    left:0.5in;
+    background-color:black;
 }

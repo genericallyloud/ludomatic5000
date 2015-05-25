@@ -6,9 +6,10 @@ html(lang="en")
         link(rel="stylesheet" href=component_styles)
     body
         each page in pages
-            .page.clearfix
-                each component in page.components
-                    .component
+            .page
+                .vertical-mark
+                each component, index in page.components
+                    .component(class="component-#{index}")
                         - with(component){
                         include _component.jade
                         - }
