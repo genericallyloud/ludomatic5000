@@ -29,6 +29,7 @@
     "express": "^4.12.4",
     "fs-extra": "^0.18.3",
     "jade": "^1.9.2",
+    "open": "0.0.5",
     "underscore": "^1.8.3",
     "wkhtmltopdf": "^0.1.5",
     "yargs": "^3.9.0"
