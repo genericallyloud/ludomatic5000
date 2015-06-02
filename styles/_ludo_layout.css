@@ -2,8 +2,8 @@
     page-break-inside: avoid;
     font-family: "Source Sans Pro", helvetica,sans-serif;
     position:relative;
-    width:11in;
-    height:8.5in;
+    width:8.5in;
+    height:11in;
 }
 .component{
     position:absolute;
@@ -12,37 +12,46 @@
     border:1px solid black;
     box-sizing: border-box;
 }
+/*row 1*/
 .component-0{
-    top:0.5in;
+    top:0.25in;
     left:0.5in;
 }
 .component-1{
-    top:0.5in;
+    top:0.25in;
     left:3in;
 }
 .component-2{
-    top:0.5in;
+    top:0.25in;
     left:5.5in;
 }
+
+/*row 2*/
 .component-3{
-    top:0.5in;
-    left:8in;
-}
-.component-4{
-    bottom:0.5in;
+    top:3.75in;
     left:0.5in;
 }
-.component-5{
-    bottom:0.5in;
+.component-4{
+    top:3.75in;
     left:3in;
 }
-.component-6{
-    bottom:0.5in;
+.component-5{
+    top:3.75in;
     left:5.5in;
 }
+
+/*row 3*/
+.component-6{
+    bottom:0.25in;
+    left:0.5in;
+}
 .component-7{
-    bottom:0.5in;
-    left:8in;
+    bottom:0.25in;
+    left:3in;
+}
+.component-8{
+    bottom:0.25in;
+    left:5.5in;
 }
 .vertical-mark{
     width:1px;
