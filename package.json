@@ -31,6 +31,7 @@
     "jade": "^1.9.2",
     "open": "0.0.5",
     "underscore": "^1.8.3",
+    "watchr": "^2.4.13",
     "wkhtmltopdf": "^0.1.5",
     "yargs": "^3.9.0"
   }
