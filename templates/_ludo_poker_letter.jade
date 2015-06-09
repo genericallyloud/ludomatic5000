@@ -1,10 +1,13 @@
 doctype html
 html(lang="en")
     head
-        title= "Poker Cards"
+        title= componentName
         link(rel="stylesheet" href=ludo_styles)
         link(rel="stylesheet" href=component_styles)
-    body
+        if mode=='design'
+            script(src="ludo_assets/socket.io.js")
+            script(src=reload_script)
+    body(class="mode-#{mode}")
         each page in pages
             .page
                 .vertical-mark
