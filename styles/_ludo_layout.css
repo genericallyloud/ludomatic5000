@@ -1,59 +1,70 @@
 .page{
-    page-break-inside: avoid;
     font-family: "Source Sans Pro", helvetica,sans-serif;
+}
+.mode-draw .page{
+    page-break-inside: avoid;
     position:relative;
     width:8.5in;
     height:11in;
 }
 .component{
-    position:absolute;
     width:2.5in;
     height:3.5in;
     border:1px solid black;
     box-sizing: border-box;
 }
+.mode-draw .component{
+    position:absolute;
+}
+.mode-design .component{
+    position:relative;
+    float:left;
+    margin:20px;
+}
+
+
 /*row 1*/
-.component-0{
+.mode-draw .component-0{
     top:0.25in;
     left:0.5in;
 }
-.component-1{
+.mode-draw .component-1{
     top:0.25in;
     left:3in;
 }
-.component-2{
+.mode-draw .component-2{
     top:0.25in;
     left:5.5in;
 }
 
 /*row 2*/
-.component-3{
+.mode-draw .component-3{
     top:3.75in;
     left:0.5in;
 }
-.component-4{
+.mode-draw .component-4{
     top:3.75in;
     left:3in;
 }
-.component-5{
+.mode-draw .component-5{
     top:3.75in;
     left:5.5in;
 }
 
 /*row 3*/
-.component-6{
+.mode-draw .component-6{
     bottom:0.25in;
     left:0.5in;
 }
-.component-7{
+.mode-draw .component-7{
     bottom:0.25in;
     left:3in;
 }
-.component-8{
+.mode-draw .component-8{
     bottom:0.25in;
     left:5.5in;
 }
-.vertical-mark{
+.mode-draw .vertical-mark{
     width:1px;
     height:0.25in;
     position:absolute;
