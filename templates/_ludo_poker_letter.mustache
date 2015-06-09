@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        title= "Poker Cards"
+        link(rel="stylesheet" href=ludo_styles)
+        link(rel="stylesheet" href=component_styles)
+    body
+        each page in pages
+            .page
+                .vertical-mark
+                each component, index in page.components
+                    .component(class="component-#{index}")
+                        - with(component){
+                        include _component.jade
+                        - }
