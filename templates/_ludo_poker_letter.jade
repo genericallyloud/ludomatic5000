@@ -16,3 +16,15 @@ html(lang="en")
                         - with(component){
                         include _component.jade
                         - }
+            
+            if drawBacks
+                .page.back-page
+                    .vertical-mark
+                    each component, index in page.components
+                        //- This needs to be generalized 
+                        - var rowMax = (Math.floor(index/3) * 3) + 2;
+                        - var reverseIndex = rowMax - (index%3);
+                        .component(class="component-#{reverseIndex}")
+                            - with(component){
+                            include _component_back.jade
+                            - }
