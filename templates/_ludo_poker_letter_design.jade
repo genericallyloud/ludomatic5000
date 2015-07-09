@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        title= componentName
+        link(rel="stylesheet" href=ludo_styles)
+        link(rel="stylesheet" href=component_styles)
+        if mode=='design'
+            script(src="ludo_assets/socket.io.js")
+            script(src=reload_script)
+    body(class="mode-#{mode}")
+        each page in pages
+            each component, index in page.components
+                - with(component){
+                    .component
+                        include _component.jade
+                    if drawBacks
+                        .component
+                            include _component_back.jade
+                - }
