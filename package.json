@@ -31,6 +31,7 @@
     "jade": "^1.9.2",
     "less": "^2.5.1",
     "open": "0.0.5",
+    "request": "^2.58.0",
     "socket.io": "^1.3.5",
     "underscore": "^1.8.3",
     "wkhtmltopdf": "^0.1.5",
