@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        title= componentName
+        link(rel="stylesheet" href=ludo_styles)
+        link(rel="stylesheet" href=component_styles)
+        style.
+            html,body{
+                margin:0;
+            }
+            .component{
+                border:none;
+            }
+        script(type='text/javascript').
+            window.onload = function(){
+                var comp = document.getElementsByClassName("component")[0];
+                var unzoomedWidth = comp.offsetWidth;
+                var viewPortWidth = 750;
+                var ratio = viewPortWidth/unzoomedWidth;
+                document.body.style.zoom = ratio;
+            }
+    body
+        - with(component){
+            .component
+                include _component.jade
+        - }

@@ -9,7 +9,7 @@ html(lang="en")
             script(src=reload_script)
     body(class="mode-#{mode}")
         each page in pages
-            each component, index in page.components
+            each component in page.components
                 - with(component){
                     .component
                         include _component.jade

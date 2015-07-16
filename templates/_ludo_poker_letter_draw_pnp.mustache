@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{componentName}}</title>
+        <link rel="stylesheet" href="{{ludo_styles}}"/>
+        <link rel="stylesheet" href="{{component_styles}}"/>
+    </head>
+    <body class="mode-{{mode}}">
+        {{#pages}}
+            <div class="page">
+                <div class="vertical-mark"></div>
+                {{#components}}
+                    <div class="component component-{{index}}">
+                        {{> _component}}
+                    </div>
+                {{/components}}
+            </div>
+            {{#drawBacks}}
+                <div class="page back-page">
+                    <div class="vertical-mark"></div>
+                    {{#components}}
+                        <div class="component component-{{reverseIndex}}">
+                            {{> _component_back}}
+                        </div>
+                    {{/components}}
+                </div>
+            {{/drawBacks}}
+        {{/pages}}
+    </body>
+</html>

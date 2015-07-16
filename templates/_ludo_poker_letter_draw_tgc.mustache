@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{componentName}}</title>
+        <link rel="stylesheet" href="{{ludo_styles}}"/>
+        <link rel="stylesheet" href="{{component_styles}}"/>
+        <style>
+            html,body{
+                margin:0;
+            }
+            .component{
+                border:none;
+            }
+        </style>
+        <script>
+            window.onload = function(){
+                var comp = document.getElementsByClassName("component")[0];
+                var unzoomedWidth = comp.offsetWidth;
+                var viewPortWidth = 750;
+                var ratio = viewPortWidth/unzoomedWidth;
+                document.body.style.zoom = ratio;
+            }
+        </script>
+    </head>
+    <body>
+        {{#component}}
+            <div class="component">
+                {{> _component}}
+            </div>
+        {{/component}}
+    </body>
+</html>

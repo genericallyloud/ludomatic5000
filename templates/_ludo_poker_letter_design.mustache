@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{componentName}}</title>
+        <link rel="stylesheet" href="{{ludo_styles}}"/>
+        <link rel="stylesheet" href="{{component_styles}}"/>
+        <script src="ludo_assets/socket.io.js"></script>
+        <script src="{{reload_script}}"></script>
+    </head>
+    <body class="mode-{{mode}}">
+        {{#pages}}
+            {{#components}}
+                <div class="component">
+                    {{> _component}}
+                </div>
+                {{#drawBacks}}
+                    <div class="component">
+                        {{> _component_back}}
+                    </div>
+                {{/drawBacks}}
+            {{/components}}
+        {{/pages}}
+    </body>
+</html>

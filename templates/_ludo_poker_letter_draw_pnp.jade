@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        title= componentName
+        link(rel="stylesheet" href=ludo_styles)
+        link(rel="stylesheet" href=component_styles)
+    body(class="mode-#{mode}")
+        each page in pages
+            .page
+                .vertical-mark
+                each component in page.components
+                    - with(component){
+                        .component(class="component-#{index}")
+                            include _component.jade
+                    - }
+            
+            if drawBacks
+                .page.back-page
+                    .vertical-mark
+                    each component in page.components
+                        - with(component){
+                            .component(class="component-#{reverseIndex}")
+                                include _component_back.jade
+                        - }
