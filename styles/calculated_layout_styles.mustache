@@ -1,0 +1,32 @@
+.component{
+    width:{{width}}in;
+    height:{{height}}in;
+}
+
+{{#drawMode}}
+    .mode-draw .page{
+        width:{{pageWidth}}in;
+        height:{{pageHeight}}in;
+    }
+    
+    {{#componentLayouts}}
+    .mode-draw .component-{{index}}{
+        top:{{top}}in;
+        left:{{left}}in;
+    }
+    {{/componentLayouts}}
+    
+    {{#verticalMarks}}
+    .mode-draw .vertical-mark-{{index}}{
+        top:{{top}}in;
+        left:{{left}}in;
+    }
+    {{/verticalMarks}}
+    
+    {{#horizontalMarks}}
+    .mode-draw .horizontal-mark-{{index}}{
+        top:{{top}}in;
+        left:{{left}}in;
+    }
+    {{/horizontalMarks}}
+{{/drawMode}}
