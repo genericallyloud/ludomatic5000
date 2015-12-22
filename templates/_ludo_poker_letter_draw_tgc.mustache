@@ -8,19 +8,13 @@
             html,body{
                 margin:0;
             }
+            body{
+                zoom: 3.125;
+            }
             .component{
                 border:none;
             }
         </style>
-        <script>
-            window.onload = function(){
-                var comp = document.getElementsByClassName("component")[0];
-                var unzoomedWidth = comp.offsetWidth;
-                var viewPortWidth = 750;
-                var ratio = viewPortWidth/unzoomedWidth;
-                document.body.style.zoom = ratio;
-            }
-        </script>
     </head>
     <body>
         {{#component}}
